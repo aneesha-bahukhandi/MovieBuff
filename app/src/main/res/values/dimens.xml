@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="carousel_height">320dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="carousel_width">300dp</dimen>
+    <dimen name="poster_height_detail">200dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="additional_height">20dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="extra_margin">20dp</dimen>
+    <dimen name="carousel_padding">48dp</dimen>
+    <dimen name="small_image_dimen">24dp</dimen>
+    <dimen name="rating_bar_width">120dp</dimen>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MovieList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/movie_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingEnd="@dimen/carousel_padding"
+            android:paddingLeft="@dimen/carousel_padding"
+            android:paddingRight="@dimen/carousel_padding"
+            android:paddingStart="@dimen/carousel_padding" />
+
+        <EditText
+            android:id="@+id/movie_title"
+            style="@style/CaptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_movie_genre"
+            android:padding="@dimen/normal_padding"
+            android:textColorHint="@color/colorTextSecondary" />
+
+        <Button
+            android:id="@+id/search_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movie_title"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:focusable="true"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/results"
+            android:textAppearance="@style/ButtonText" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

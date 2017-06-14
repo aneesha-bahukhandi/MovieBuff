@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieBuff</string>
+    <string name="enter_movie_genre">Enter a movie title</string>
+    <string name="results">SEARCH</string>
+    <string name="no_genre">You need to enter a title!</string>
+
+    <string name="imdb_id">IMDB ID</string>
+    <string name="year">YEAR</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="description">Description</string>
+    <string name="release_status">Status: </string>
+    <string name="genre">Genre :</string>
+    <string name="lang">Language</string>
+    <string name="actors">Actors :</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.android.bahukhandi.aneesha.movie_buff.moviebuff.views.DragLayout
+            android:id="@+id/drag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bototmExtraIndicatorHeight="@dimen/carousel_height"
+            app:bottomDragVisibleHeight="@dimen/additional_height">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/carousel_height"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@color/colorWhiteTranslucent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"/>
+
+                </FrameLayout>
+
+                <com.android.bahukhandi.aneesha.movie_buff.moviebuff.views.AspectRatioCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/carousel_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/additional_height"
+                    android:layout_marginLeft="@dimen/extra_margin"
+                    android:layout_marginRight="@dimen/extra_margin"
+                    app:cardCornerRadius="@dimen/card_radius">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/carousel_height"
+                                    android:id="@+id/movie_poster"
+                                    android:scaleType="centerCrop"
+                                    android:background="@drawable/ic_film"
+                                    android:contentDescription="@string/app_name"/>
+
+                                <TextView
+                                    android:id="@+id/movie_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:maxLines="3"
+                                    android:text="@string/movie_title"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/colorWhiteTranslucent"
+                                    style="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorTextPrimary"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/normal_desc"
+                            android:background="@color/colorWhiteTranslucent"
+                            android:layout_gravity="bottom">
+
+                                <TextView
+                                    android:id="@+id/imdb_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/imdb_id"
+                                    style = "@style/TextAppearance.AppCompat.Body1" />
+
+                                <ImageView
+                                    android:contentDescription="@string/app_name"
+                                    android:layout_width="@dimen/small_image_dimen"
+                                    android:layout_height="@dimen/small_image_dimen"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/movie_icon"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_film" />
+
+                                <TextView
+                                    android:id="@+id/imdb_year"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/year"
+                                    style = "@style/TextAppearance.AppCompat.Body1" />
+
+                        </RelativeLayout>
+
+                </com.android.bahukhandi.aneesha.movie_buff.moviebuff.views.AspectRatioCardView>
+
+        </com.android.bahukhandi.aneesha.movie_buff.moviebuff.views.DragLayout>
+
+</FrameLayout>
